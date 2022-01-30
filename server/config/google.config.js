@@ -8,8 +8,8 @@ const GoogleStrategy = googleOAuth.Strategy;
 export default (passport) => {
   passport.use(
     new GoogleStrategy({
-      clientID: "194980543760-47a8ula5jge8fdj80l68ktl88g2nd8gi.apps.googleusercontent.com",
-      clientSecret: "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",
+      clientID: "get_ID",
+      clientSecret: "get_Secret",
       callbackURL: "http://localhost:5000/auth/google/callback"
     },
 async(accessToken, refreshToken, profile, done) => {
